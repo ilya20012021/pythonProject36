@@ -1,7 +1,7 @@
 from googlesearch import search
 import pandas as pd
 import requests
-from tabulate import tabulate
+import json
 import webbrowser
 
 
@@ -35,7 +35,9 @@ while(n != 0):
         df["results"] = res
         df["work"] = work
         df["nums"] = nums
-        print(tabulate(df,headers = "keys",tablefmt = "psql"))
+        df1 = df.to_json()
+        df2 = json.loads(df1)
+        print(json.dumps(df2,indent=len(df2)))
         ans = ["да", "нет"]
         ans_n = "/".join(ans)
         print(f"Хотите ли вы перейти на один из работающих сайтов?{ans_n}")
