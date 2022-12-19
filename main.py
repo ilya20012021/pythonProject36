@@ -2,8 +2,8 @@ from googlesearch import search
 import pandas as pd
 import requests
 import json
-import webbrowser
 
+import data
 
 n = 1
 
@@ -38,23 +38,17 @@ while(n != 0):
         df1 = df.to_json()
         df2 = json.loads(df1)
         print(json.dumps(df2,indent=len(df2)))
-        ans = ["да", "нет"]
-        ans_n = "/".join(ans)
-        print(f"Хотите ли вы перейти на один из работающих сайтов?{ans_n}")
-        s = str(input("Введите ответ:"))
-        if (s == ans[0]):
-            s = int(input("Введите строку, соответствующую вашему сайту:"))
-            if(0 <= s < len(res)):
-                if (df.at[s, "work"] != "-"):
-                    webbrowser.open(df.at[s, "results"])
-                else:
-                    print("???")
-            else:
-                print("Нет строки!")
-
-        else:
-            print("OK")
-
+        df3 = json.dumps(df2,indent=len(df2))
+        name = str(input("Введите имя таблицы:"))
+        with open("1.txt", "a+") as f:
+            f.write(f'{name}\n')
+        with open(f"{name}.json", "a+") as f:
+            f.write(df3)
+    dir = ["Получить доступ к таблицам(нажмите 1)","Нарисовать гистограмму(нажмите 2)"]
+    dir1 = ",".join(dir)
+    r = str(input("Введите ответ:"))
+    if(r == "1"):
+        data.get()
     else:
         print("OK")
     ans = ["да", "нет"]
