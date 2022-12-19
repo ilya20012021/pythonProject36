@@ -11,6 +11,8 @@ def get():
         print(i)
     h = str(input("Введите название таблицы для работы:"))
     if (h in u):
+        with open(f"{h}.json","r") as f:
+            print(f.read())
         df = pd.read_json(f"{h}.json")
         s = int(input("Введите строку, соответствующую вашему сайту:"))
         if (0 <= s < len(df["work"])):

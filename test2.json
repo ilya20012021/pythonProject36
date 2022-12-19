@@ -1,0 +1,58 @@
+{
+    "id": {
+        "0": 0,
+        "1": 1,
+        "2": 2,
+        "3": 3,
+        "4": 4,
+        "5": 5,
+        "6": 6,
+        "7": 7,
+        "8": 8,
+        "9": 9,
+        "10": 10,
+        "11": 11
+    },
+    "results": {
+        "0": "http://www.rsreu.ru/",
+        "1": "https://vk.com/rgrty",
+        "2": "https://ru.wikipedia.org/wiki/%D0%A0%D1%8F%D0%B7%D0%B0%D0%BD%D1%81%D0%BA%D0%B8%D0%B9_%D0%B3%D0%BE%D1%81%D1%83%D0%B4%D0%B0%D1%80%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9_%D1%80%D0%B0%D0%B4%D0%B8%D0%BE%D1%82%D0%B5%D1%85%D0%BD%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9_%D1%83%D0%BD%D0%B8%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%82%D0%B5%D1%82",
+        "3": "https://vuzopedia.ru/vuz/3583",
+        "4": "https://yandex.ru/maps/org/rgrtu/1553960425/",
+        "5": "https://ryazan.ucheba.ru/uz/19075",
+        "6": "https://2gis.ru/ryazan/geo/6193085142800998",
+        "7": "https://2gis.ru/ryazan/firm/6193433035349772",
+        "8": "https://career.habr.com/companies/rsreu",
+        "9": "https://www.tadviser.ru/index.php/%D0%9A%D0%BE%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D1%8F:%D0%A0%D1%8F%D0%B7%D0%B0%D0%BD%D1%81%D0%BA%D0%B8%D0%B9_%D0%B3%D0%BE%D1%81%D1%83%D0%B4%D0%B0%D1%80%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9_%D1%80%D0%B0%D0%B4%D0%B8%D0%BE%D1%82%D0%B5%D1%85%D0%BD%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9_%D1%83%D0%BD%D0%B8%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%82%D0%B5%D1%82_(%D0%A0%D0%93%D0%A0%D0%A2%D0%A3)",
+        "10": "https://vuz.edunetwork.ru/62/41/v530/",
+        "11": "https://www.rusprofile.ru/id/640739"
+    },
+    "work": {
+        "0": "+",
+        "1": "+",
+        "2": "+",
+        "3": "+",
+        "4": "+",
+        "5": "+",
+        "6": "+",
+        "7": "+",
+        "8": "+",
+        "9": "+",
+        "10": "+",
+        "11": "+"
+    },
+    "nums": {
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 2,
+        "10": 0,
+        "11": 0
+    }
+}
