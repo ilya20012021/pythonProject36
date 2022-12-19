@@ -2,6 +2,7 @@ from googlesearch import search
 import pandas as pd
 import requests
 from tabulate import tabulate
+import webbrowser
 
 
 n = 1
@@ -20,6 +21,7 @@ while(n != 0):
         res = list(res1)
         id = [int(i) for i in range(len(res))]
         work = []
+        nums = [0 for i in range(len(res))]
         for i in res:
             try:
                 r = requests.get(i)
@@ -32,7 +34,24 @@ while(n != 0):
         df["id"] = id
         df["results"] = res
         df["work"] = work
+        df["nums"] = nums
         print(tabulate(df,headers = "keys",tablefmt = "psql"))
+        ans = ["да", "нет"]
+        ans_n = "/".join(ans)
+        print(f"Хотите ли вы перейти на один из работающих сайтов?{ans_n}")
+        s = str(input("Введите ответ:"))
+        if (s == ans[0]):
+            s = int(input("Введите строку, соответствующую вашему сайту:"))
+            if(0 <= s < len(res)):
+                if (df.at[s, "work"] != "-"):
+                    webbrowser.open(df.at[s, "results"])
+                else:
+                    print("???")
+            else:
+                print("Нет строки!")
+
+        else:
+            print("OK")
 
     else:
         print("OK")
