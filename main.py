@@ -11,12 +11,20 @@ n = 1
 
 while(n != 0):
     print("Вас приветствует Автоматизированная информационно-аналитическая система google search")
-    login = ["Il","Milka"]
-    passwd = ["Mos","Mila"]
+    login = open("2.txt", "r").readlines()
+    login1 = "".join(login)
+    login2 = login1.split()
+    login3 = set(login2)
+    login4 = list(login3)
+    passwd = open("3.txt", "r").readlines()
+    login5 = "".join(passwd)
+    login6 = login5.split()
+    login7 = set(login6)
+    login8 = list(login7)
     h1 = str(input("Введите логин:"))
     h2 = str(input("Введите пароль:"))
-    if(h1 in login and h2 in passwd):
-        if(login.index(h1) == passwd.index(h2)):
+    if(h1 in login4 and h2 in login8):
+        if(login4.index(h1) == login8.index(h2)):
             a = ["да", "нет"]
             b = "/".join(a)
             print(f"Новый запрос?{b}")
