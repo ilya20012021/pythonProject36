@@ -4,6 +4,7 @@ import requests
 import json
 
 import data
+import diagram
 
 n = 1
 
@@ -13,6 +14,7 @@ while(n != 0):
     a = ["да", "нет"]
     b = "/".join(a)
     print(f"Новый запрос?{b}")
+    print("Если нужна работа с уже имеющимися таблицами,также можете нажать ENTER")
     ans = str(input())
     if(ans == a[0]):
         theme = str(input("Введите тему запроса:"))
@@ -44,14 +46,16 @@ while(n != 0):
             f.write(f'{name}\n')
         with open(f"{name}.json", "a+") as f:
             f.write(df3)
-    dir = ["Получить доступ к таблицам(нажмите 1)","Нарисовать гистограмму(нажмите 2)"]
+    dir = ["Получить доступ к таблицам(нажмите 1)","Нарисовать диаграмму(нажмите 2)"]
     dir1 = ",".join(dir)
     print(dir1)
     r = str(input("Введите ответ:"))
     if(r == "1"):
         data.get()
+    elif(r == "2"):
+        diagram.draw()
     else:
-        print("OK")
+        print("???")
     ans = ["да", "нет"]
     ans_n = "/".join(ans)
     print(f"Хотите ли вы продолжить работу с данным ПО?{ans_n}")

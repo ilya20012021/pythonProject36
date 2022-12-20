@@ -32,3 +32,6 @@ def get():
             f.truncate(0)
         with open(f"{h}.json", "a+") as f:
             f.write(df3)
+
+    else:
+        print("???")
