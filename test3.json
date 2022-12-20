@@ -1,0 +1,42 @@
+{
+    "id": {
+        "0": 0,
+        "1": 1,
+        "2": 2,
+        "3": 3,
+        "4": 4,
+        "5": 5,
+        "6": 6,
+        "7": 7
+    },
+    "results": {
+        "0": "https://ru.wikipedia.org/wiki/%D0%9A%D1%83%D0%B4%D0%B6,_%D0%A1%D1%82%D0%B0%D0%BD%D0%B8%D1%81%D0%BB%D0%B0%D0%B2_%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B5%D0%B5%D0%B2%D0%B8%D1%87",
+        "1": "https://en.wikipedia.org/wiki/Stanislav_Kudzh",
+        "2": "https://www.mirea.ru/about/administration/rektor/",
+        "3": "https://wikimirea.org/wiki/%D0%9A%D1%83%D0%B4%D0%B6,_%D0%A1%D1%82%D0%B0%D0%BD%D0%B8%D1%81%D0%BB%D0%B0%D0%B2_%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B5%D0%B5%D0%B2%D0%B8%D1%87",
+        "4": "https://www.tadviser.ru/index.php/%D0%9F%D0%B5%D1%80%D1%81%D0%BE%D0%BD%D0%B0:%D0%9A%D1%83%D0%B4%D0%B6_%D0%A1%D1%82%D0%B0%D0%BD%D0%B8%D1%81%D0%BB%D0%B0%D0%B2_%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B5%D0%B5%D0%B2%D0%B8%D1%87",
+        "5": "https://declarator.org/person/54212/",
+        "6": "https://24smi.org/celebrity/156620-stanislav-kudzh.html",
+        "7": "https://uznayvse.ru/znamenitosti/biografiya-stanislav-kudzh.html"
+    },
+    "work": {
+        "0": "+",
+        "1": "+",
+        "2": "+",
+        "3": "+",
+        "4": "+",
+        "5": "+",
+        "6": "+",
+        "7": "+"
+    },
+    "nums": {
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 1,
+        "4": 1,
+        "5": 0,
+        "6": 0,
+        "7": 0
+    }
+}
