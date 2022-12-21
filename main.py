@@ -11,18 +11,11 @@ n = 1
 
 while(n != 0):
     print("Вас приветствует Автоматизированная информационно-аналитическая система google search")
-    login = open("2.txt", "r").readlines()
-    login1 = "".join(login)
-    login2 = login1.split()
-    login3 = set(login2)
-    login4 = list(login3)
-    passwd = open("3.txt", "r").readlines()
-    login5 = "".join(passwd)
-    login6 = login5.split()
-    login7 = set(login6)
-    login8 = list(login7)
+    df = pd.read_csv("1.csv")
     h1 = str(input("Введите логин:"))
     h2 = str(input("Введите пароль:"))
+    login4 = list(df["login"])
+    login8 = list(df["passwd"])
     if(h1 in login4 and h2 in login8):
         if(login4.index(h1) == login8.index(h2)):
             a = ["да", "нет"]
